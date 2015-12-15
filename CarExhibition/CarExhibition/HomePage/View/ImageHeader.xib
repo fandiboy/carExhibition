@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ImageHeader">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gCw-DW-MD5">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.30698390720000002" green="1" blue="0.51241286210000003" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gv7-NT-Fax">
+                    <rect key="frame" x="18" y="528" width="141" height="49"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="141" id="46U-63-7w2"/>
+                        <constraint firstAttribute="height" constant="49" id="mtE-xh-fb1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gCw-DW-MD5" firstAttribute="leading" secondItem="gv7-NT-Fax" secondAttribute="trailing" constant="-159" id="9XX-vP-9eX"/>
+                <constraint firstItem="gv7-NT-Fax" firstAttribute="top" secondItem="gCw-DW-MD5" secondAttribute="bottom" constant="-72" id="Xb3-gd-dk7"/>
+                <constraint firstItem="gCw-DW-MD5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YcE-zP-49d"/>
+                <constraint firstItem="gCw-DW-MD5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bA4-Xe-Zcf"/>
+                <constraint firstAttribute="trailing" secondItem="gCw-DW-MD5" secondAttribute="trailing" id="hbf-xr-X2y"/>
+                <constraint firstItem="gCw-DW-MD5" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="hhR-4r-wPx"/>
+            </constraints>
+            <connections>
+                <outlet property="imgView" destination="gCw-DW-MD5" id="CG5-Mc-tHN"/>
+                <outlet property="nameLabel" destination="gv7-NT-Fax" id="rby-m8-6CF"/>
+            </connections>
+        </view>
+    </objects>
+</document>

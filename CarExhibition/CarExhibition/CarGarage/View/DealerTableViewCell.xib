@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="59" id="KGk-i7-Jjw" customClass="DealerTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="58.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chexun_4sicon" translatesAutoresizingMaskIntoConstraints="NO" id="Lj7-K7-fdV">
+                        <rect key="frame" x="5" y="10" width="15" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="2fr-au-Z7A"/>
+                            <constraint firstAttribute="height" constant="12" id="IF4-64-RgI"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="12" id="fus-oJ-Q4R"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="15" id="wP7-Q1-FIk"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFj-7f-9Ih">
+                        <rect key="frame" x="28" y="0.0" width="0.0" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juv-in-ViM">
+                        <rect key="frame" x="325" y="0.0" width="0.0" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yo-ZV-KHv">
+                        <rect key="frame" x="5" y="32" width="345" height="26"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="juv-in-ViM" firstAttribute="centerY" secondItem="rFj-7f-9Ih" secondAttribute="centerY" id="06L-QU-BrA"/>
+                    <constraint firstItem="juv-in-ViM" firstAttribute="top" secondItem="rFj-7f-9Ih" secondAttribute="top" id="Bkq-Ht-aLS"/>
+                    <constraint firstItem="Lj7-K7-fdV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Fai-OT-SOZ"/>
+                    <constraint firstItem="1yo-ZV-KHv" firstAttribute="top" secondItem="rFj-7f-9Ih" secondAttribute="bottom" id="QM7-du-sx2"/>
+                    <constraint firstItem="rFj-7f-9Ih" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QxK-sn-hjZ"/>
+                    <constraint firstAttribute="trailing" secondItem="juv-in-ViM" secondAttribute="trailing" id="Wuk-6f-Qdv"/>
+                    <constraint firstAttribute="trailing" secondItem="juv-in-ViM" secondAttribute="trailing" constant="30" id="dEy-a2-j9T"/>
+                    <constraint firstItem="1yo-ZV-KHv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="dbf-Ca-I1R"/>
+                    <constraint firstAttribute="trailing" secondItem="1yo-ZV-KHv" secondAttribute="trailing" constant="5" id="fRd-Ib-ieW"/>
+                    <constraint firstItem="Lj7-K7-fdV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="lJ9-52-ffI"/>
+                    <constraint firstItem="rFj-7f-9Ih" firstAttribute="centerY" secondItem="Lj7-K7-fdV" secondAttribute="centerY" id="pHm-5E-H54"/>
+                    <constraint firstItem="Lj7-K7-fdV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="qbE-h9-LBr"/>
+                    <constraint firstAttribute="bottom" secondItem="1yo-ZV-KHv" secondAttribute="bottom" id="sGg-Wt-z5H"/>
+                    <constraint firstItem="juv-in-ViM" firstAttribute="top" secondItem="rFj-7f-9Ih" secondAttribute="top" id="w8N-Ee-5B3"/>
+                    <constraint firstItem="rFj-7f-9Ih" firstAttribute="leading" secondItem="Lj7-K7-fdV" secondAttribute="trailing" constant="8" symbolic="YES" id="wNs-yL-Qwf"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Fai-OT-SOZ"/>
+                        <exclude reference="Wuk-6f-Qdv"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lab4CompanyAddress" destination="1yo-ZV-KHv" id="Kcy-zT-XnC"/>
+                <outlet property="lab4DealerShortName" destination="rFj-7f-9Ih" id="Cym-Xy-EdW"/>
+                <outlet property="lab4Distance" destination="juv-in-ViM" id="BJo-5f-jdv"/>
+            </connections>
+            <point key="canvasLocation" x="368.5" y="283.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chexun_4sicon" width="14" height="13"/>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="KGk-i7-Jjw" customClass="KindTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="331" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbi-X1-h5C">
+                        <rect key="frame" x="12" y="8" width="43" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="43" id="fJA-mD-Acv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13.4万" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nb4-1G-tQN">
+                        <rect key="frame" x="12" y="37" width="78" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="78" id="NCJ-cE-BK3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.43134407722513091" green="0.43134407722513091" blue="0.43134407722513091" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.2TSI 自动舒适型" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Cd-tr-x5U">
+                        <rect key="frame" x="58" y="8" width="198" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="198" id="vkx-Jo-KsY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="Nb4-1G-tQN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="2Dz-Nn-vRn"/>
+                    <constraint firstAttribute="topMargin" secondItem="1Cd-tr-x5U" secondAttribute="top" id="8tS-RP-2Kd"/>
+                    <constraint firstAttribute="topMargin" secondItem="kbi-X1-h5C" secondAttribute="top" id="AxA-jp-o4n"/>
+                    <constraint firstItem="1Cd-tr-x5U" firstAttribute="leading" secondItem="kbi-X1-h5C" secondAttribute="trailing" constant="3" id="G93-gc-jNK"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="1Cd-tr-x5U" secondAttribute="bottom" constant="26" id="Hxo-IW-qhd"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Nb4-1G-tQN" secondAttribute="bottom" constant="-3" id="L3o-MT-I2A"/>
+                    <constraint firstItem="kbi-X1-h5C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="h80-xg-Tlg"/>
+                    <constraint firstItem="Nb4-1G-tQN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="29" id="yn5-Vp-hDl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="kbi-X1-h5C" secondAttribute="bottom" constant="35" id="uBH-Ex-AOa"/>
+            </constraints>
+            <connections>
+                <outlet property="label4Price" destination="Nb4-1G-tQN" id="u2z-K2-5Wj"/>
+                <outlet property="label4kind" destination="1Cd-tr-x5U" id="wgv-89-Hnb"/>
+                <outlet property="label4year" destination="kbi-X1-h5C" id="8Dj-sU-Lhp"/>
+            </connections>
+            <point key="canvasLocation" x="308.5" y="454"/>
+        </tableViewCell>
+    </objects>
+</document>

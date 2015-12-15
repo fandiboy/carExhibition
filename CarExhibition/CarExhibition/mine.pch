@@ -1,0 +1,30 @@
+//
+//  mine.pch
+//  询车问价
+//
+//  Created by 刘宁 on 15/12/2.
+//  Copyright © 2015年 刘宁. All rights reserved.
+//
+#import "UIImageView+WebCache.h"
+#import "AFHTTPRequestOperationManager.h"
+#import "AFNetworking.h"
+#import "MBProgressHUD.h"
+#import "URL.h"
+#import "MJRefresh.h"
+#import "SUNSlideSwitchView.h"
+#import "FFNavbarMenu.h"
+#import "LNNavigationController.h"
+#ifndef mine_pch
+#define mine_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+// 判断是否为iOS7
+#define iOS7 [[UIDevice currentDevice].systemVersion doubleValue] > 7.0
+
+#endif /* mine_pch */
+
+
+#import "YiSlideMenu.h"
+#import "YiLeftView.h"
+#import "YiRightView.h"
